@@ -1,3 +1,4 @@
+from math import pi
 
 
 def test_greeting():
@@ -36,11 +37,11 @@ def test_circle():
     """
     r = 23
     # TODO сосчитайте площадь
-    area = 0
+    area = pi * r**2
     assert area == 1661.9025137490005
 
     # TODO сосчитайте длину окружности
-    length = 0
+    length = 2 * pi * r
     assert length == 144.51326206513048
 
 

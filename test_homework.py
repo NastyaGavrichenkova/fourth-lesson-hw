@@ -1,4 +1,5 @@
 from math import pi
+import random
 
 
 def test_greeting():
@@ -51,7 +52,8 @@ def test_random_list():
     """
 
     # TODO создайте список
-    l = []
+    l = [random.randint(1,101) for _ in range(10)]
+    l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
 

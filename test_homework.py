@@ -13,6 +13,7 @@ def test_greeting():
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
 
+    print(output)
 
 def test_rectangle():
     """
@@ -41,10 +42,13 @@ def test_circle():
     area = pi * r**2
     assert area == 1661.9025137490005
 
+    print(f'The area of the circle is {area}')
+
     # TODO сосчитайте длину окружности
     length = 2 * pi * r
     assert length == 144.51326206513048
 
+    print(f'The circumference is {length}')
 
 def test_random_list():
     """
